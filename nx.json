@@ -56,5 +56,6 @@
       "style": "scss"
     }
   },
-  "defaultProject": "nx-test"
+  "defaultProject": "nx-test",
+  "nxCloudAccessToken": "YWM5MjgzMWMtNTgxZC00OGZlLThkZGMtNDUzOTg1MWUxNjM5fHJlYWQtd3JpdGU="
 }
