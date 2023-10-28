@@ -137,6 +137,13 @@
         }
       },
       "defaultConfiguration": "production"
+    },
+    "stylelint": {
+      "executor": "nx-stylelint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["src/app/*.css", "src/app/*.scss"]
+      }
     }
   }
 }
