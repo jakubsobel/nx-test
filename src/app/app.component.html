@@ -1,2 +1,6 @@
 <nx-test-menu></nx-test-menu>
+<a [routerLink]="['/']">Home</a><br>
+<a [routerLink]="['/login']">Login</a><br>
+<button (click)="logout()">Log Out</button>
+<passage-profile [appId]="appId"></passage-profile>
 <router-outlet></router-outlet>

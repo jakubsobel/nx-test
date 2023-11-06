@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-test/auth": ["src/libs/auth/src/index.ts"],
       "@nx-test/menu": ["src/libs/menu/src/index.ts"]
     }
   },
