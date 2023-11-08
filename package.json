@@ -20,7 +20,7 @@
     "@angular/platform-server": "~16.2.0",
     "@angular/router": "~16.2.0",
     "@nguniversal/express-engine": "~16.2.0",
-    "@nx/angular": "17.0.2",
+    "@nx/angular": "17.0.3",
     "@passageidentity/passage-elements": "^1.16.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
@@ -37,13 +37,13 @@
     "@angular/compiler-cli": "~16.2.0",
     "@angular/language-service": "~16.2.0",
     "@nguniversal/builders": "~16.2.0",
-    "@nx/devkit": "17.0.2",
-    "@nx/eslint": "17.0.2",
-    "@nx/eslint-plugin": "17.0.2",
-    "@nx/jest": "17.0.2",
-    "@nx/js": "17.0.2",
-    "@nx/playwright": "17.0.2",
-    "@nx/workspace": "17.0.2",
+    "@nx/devkit": "17.0.3",
+    "@nx/eslint": "17.0.3",
+    "@nx/eslint-plugin": "17.0.3",
+    "@nx/jest": "17.0.3",
+    "@nx/js": "17.0.3",
+    "@nx/playwright": "17.0.3",
+    "@nx/workspace": "17.0.3",
     "@playwright/test": "^1.36.0",
     "@schematics/angular": "~16.2.0",
     "@swc-node/register": "~1.6.7",
@@ -59,7 +59,7 @@
     "jest-environment-jsdom": "^29.4.1",
     "jest-preset-angular": "~13.1.0",
     "jsonc-eslint-parser": "^2.1.0",
-    "nx": "17.0.2",
+    "nx": "17.0.3",
     "nx-stylelint": "^17.0.1",
     "prettier": "^2.6.2",
     "stylelint": "^15.0.0",
@@ -70,3 +70,4 @@
     "typescript": "~5.1.3"
   }
 }
+
