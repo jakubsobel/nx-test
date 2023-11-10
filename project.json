@@ -50,10 +50,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "nx-test:build:production"
+          "buildTarget": "nx-test:build:production"
         },
         "development": {
-          "browserTarget": "nx-test:build:development"
+          "buildTarget": "nx-test:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -61,7 +61,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "nx-test:build"
+        "buildTarget": "nx-test:build"
       }
     },
     "lint": {
@@ -75,14 +75,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectName}"],
       "options": {
-        "jestConfig": "jest.config.app.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
+        "jestConfig": "jest.config.app.ts"
       }
     },
     "server": {
@@ -108,7 +101,7 @@
       "defaultConfiguration": "production"
     },
     "serve-ssr": {
-      "executor": "@nguniversal/builders:ssr-dev-server",
+      "executor": "@angular-devkit/build-angular:ssr-dev-server",
       "configurations": {
         "development": {
           "browserTarget": "nx-test:build:development",
@@ -122,7 +115,7 @@
       "defaultConfiguration": "development"
     },
     "prerender": {
-      "executor": "@nguniversal/builders:prerender",
+      "executor": "@angular-devkit/build-angular:prerender",
       "options": {
         "routes": ["/"]
       },
