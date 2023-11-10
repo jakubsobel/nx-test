@@ -3,10 +3,10 @@ import {
   ChangeDetectionStrategy,
   Component,
   OnInit,
+  afterRender,
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MenuComponent } from '@nx-test/menu';
-import '@passageidentity/passage-elements/passage-profile';
 import { PassageUser } from '@passageidentity/passage-elements/passage-user';
 
 @Component({
@@ -22,6 +22,13 @@ export class AppComponent implements OnInit {
   title = 'nx-test';
   appId = 'KB6T9S5tEHLaj5068sv4LSOQ';
   user?: PassageUser;
+
+  constructor() {
+    afterRender(() => {
+      console.log('afterRender: app');
+      import('@passageidentity/passage-elements/passage-profile');
+    });
+  }
 
   public async ngOnInit() {
     try {
