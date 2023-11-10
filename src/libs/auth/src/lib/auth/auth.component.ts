@@ -1,6 +1,5 @@
-import { CUSTOM_ELEMENTS_SCHEMA, ChangeDetectionStrategy, Component } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, ChangeDetectionStrategy, Component, afterRender } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import '@passageidentity/passage-elements/passage-auth'
 
 @Component({
   selector: 'nx-test-auth',
@@ -13,4 +12,11 @@ import '@passageidentity/passage-elements/passage-auth'
 })
 export class AuthComponent {
   appId = 'KB6T9S5tEHLaj5068sv4LSOQ';
+
+  constructor() {
+    afterRender(() => {
+      console.log('afterRender: auth');
+      import('@passageidentity/passage-elements/passage-auth');
+    })
+  }
 }
